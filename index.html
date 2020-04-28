@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+        <meta  charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="_reset.css">
+		<title>Сводная характеристика</title>
+		<link rel="stylesheet" type="text/css" href="_c\design.css">
+    </head>
+    <body>
+        <table>
+            <caption>
+                Сравнение CSS2 и CSS3
+            </caption>
+            <tr>
+                <th width="50%">
+                    Параметр
+                </th>
+                <th>
+                    Код
+                </th>
+            </tr>
+            <tr>
+                <td id="Transparency" class="left">Прозрачность</td>
+                <td>opacity: 0.5</td>
+            </tr>
+            <tr>
+                <td id="BlockShadow" class="left">Тень блока</td>
+                <td>box-shadow: 0 0 10px black</td>
+            </tr>
+            <tr>
+                <td id="TextShadow" class="left">Тень текста</td>
+                <td>text-shadow: 2px -4px 3px black</td>
+            </tr>
+            <tr>
+                <td id="CircledBorder" class="left">Округленая граница</td>
+                <td>border-radius: 20px</td>
+            </tr>
+            <tr>
+                <td id="GradientBackground" class="left">Градиентный фон</td>
+                <td>background: linear-gradient(to right, aqua, yellow)</td>
+            </tr>
+            <tr>
+                <td id="BackgroundClip" class="left">Вывод фона под границами</td>
+                <td>background-clip: border-box</td>
+            </tr>
+            <tr>
+                <td id="BackgroundOrigin" class="left">Область позиционирования фонового рисунка</td>
+                <td>background-origin: padding-box</td>
+            </tr>
+            <tr>
+                <td id="BackgroundSize" class="left">Масштабирование фонового изображения</td>
+                <td>background-size: contain</td>
+            </tr>
+            <tr>
+                <td  class="left"><div id="BoxSizing">Изменение алгоритма расчета ширины и высоты элемента</div></td>
+                <td>box-sizing: border-box</td>
+            </tr>
+            <tr>
+                <td id="ColumnCount" class="left">Количество колонок в многоколоночном тексте</td>
+                <td>column-count: 2</td>
+            </tr>
+            <tr>
+                <td id="ColumnGap" class="left">Расстояние между колонками в многоколоночном тексте</td>
+                <td>column-gap: 4em</td>
+            </tr>
+            <tr>
+                <td id="ColumnRule" class="left">Отрисовка линии между колонками в многоколоночном тексте</td>
+                <td>column-rule: 3px solid green</td>
+            </tr>
+            <tr>
+                <td id="ColumnWidth" class="left"><div id="ColumnWidth">Оптимальная ширина колонки в многоколоночном тексте</div></td>
+                <td>column-width: 5em</td>
+            </tr>
+            <tr>
+                <td id="Columns" class="left">Универсальное свойство колонок</td>
+                <td>columns: 3 10em</td>
+            </tr>
+            <tr>
+                <td class="left"><div id="Hyphens">Переносы слов в блоке текста. Дабы сделать этот текст боль<wbr>ше, добавим сюда еще несколько строк абсолют<wbr>но 
+                    бессмысленного текста, который поможет отра<wbr>зить работу вышеуказанного свойства.</div>
+                </td>
+                <td>hyphens: manual</td>
+            </tr>
+            <tr>
+                <td id="OverFlowX" class="left">Свойство overflow-x управляет отображением содержания блочного элемента по горизонтали, 
+                    если контент целиком не помещается и выходит за область справа или слева от блока. Добавляет горизонтальную полосу прокрутки.
+                </td>
+                <td>overflow-x: scroll;</td>
+            </tr>
+            <tr>
+                <td id="OverFlowY" class="left">Свойство overflow-y управляет отображением содержания блочного элемента по вертикали,
+                     если контент целиком не помещается и выходит за область сверху или снизу от блока. Добавляет вертикальную полосу прокрутки.
+                </td>
+                <td>overflow-y: scroll</td>
+            </tr>
+            <tr>
+                <td class="left">Указывает, можно ли пользователю изменять размеры текстового поля.
+                    <textarea id="Resize" cols="30" rows="7"></textarea>
+                </td>
+                <td>resize: verical</td>
+            </tr>
+            <tr>
+                <td class="left"><div id="TextOverflow">Определяет параметры видимости текста в блоке, если текст целиком не помещается в заданную область.</div>
+                </td>
+                <td>text-overflow: ellipsis</td>
+            </tr>
+            <tr>
+                <td class="left">Трансформирует элемент, в частности, позволяет его масштабировать, вращать, сдвигать, 
+                    наклонять, а также комбинировать виды трансформаций.
+                    <img  src="_i/css_logo.png" id="Transform">
+                </td>
+                <td>transform: rotate(15deg)</td>
+            </tr>
+            <tr>
+                <td class="left"><div id="WordBreak">Свойство word-break указывает, как делать перенос строк внутри слов, 
+                    которые не помещаются по ширине в заданную область.</div>
+                </td>
+                <td>word-break: break-all</td>
+            </tr>
+            <tr>
+                <td id="WritingMode" class="left">Устанавливает направление текста на странице в IE.
+                </td>
+                <td>writing-mode: bt-rl</td>
+            </tr>
+        </table>
+    </body>
+</html>

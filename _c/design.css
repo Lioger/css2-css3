@@ -1,0 +1,108 @@
+table {
+    border: 1px solid black;
+    border-spacing: 5px;
+    width: 50%;
+    font-family: Open Sans;
+}
+th {
+    font-weight: 400;
+    border: 1px solid black;
+    padding: 5px;
+}
+td {
+    border: 1px solid black;
+    vertical-align: center;
+    text-align: center;
+    height: 5em;   
+}
+.left {
+    background: yellow;
+}
+#Transparency {
+    opacity: 0.5;
+}
+#BlockShadow {
+    box-shadow: 0 0 10px black;
+}
+#TextShadow {
+    text-shadow: 2px -4px 3px black;
+}
+#CircledBorder {
+    border-radius: 20px;
+}
+#GradientBackground {
+    background: linear-gradient(to right, aqua, yellow);
+}
+#BackgroundClip {
+    background: tomato url(../_i/texture.png) no-repeat;
+    border: 10px dotted blue;
+    background-clip: border-box;
+}
+#BackgroundOrigin {
+    background: url(../_i/css3.png) repeat-x;
+    border: 20px solid black;
+    padding: 20px;
+    background-origin: padding-box;
+}
+#BackgroundSize {
+    background: url(../_i/css3.png) no-repeat;
+    background-size: cover;
+}
+#BoxSizing {
+    width: 400px;
+    padding: 10px;
+    border: 20px solid #000;
+    box-sizing: border-box;
+}
+#ColumnCount {
+    column-count: 2;
+}
+#ColumnGap {
+    column-count: 3;
+    column-gap: 4em;
+}
+#ColumnRule {
+    column-count: 2;
+    column-gap: 6em;
+    column-rule: 3px solid green;
+}
+#ColumnWidth {
+    column-count: 2;
+    column-gap: 4em;
+    column-width: 5em;
+}
+#Columns {
+    columns: 3 10em;
+}
+#Hyphens { /* класс блочится */
+    hyphens: manual;
+}
+#OverFlowX {
+    overflow-x: scroll;
+}
+#OverFlowY {
+    overflow-y: scroll;
+}
+#Resize {
+    resize: vertical;
+}
+#TextOverflow {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#Transform {
+    width: 100px;
+    height: 100px;
+    transform: rotate(15deg);
+    transform: skewX(-15deg);
+}
+#WordBreak {
+    width: 400px;
+    word-break: break-all;
+}
+#WritingMode { /* Работает только в IE */
+    height: 150px;
+    writing-mode: bt-rl;
+}
