@@ -19,90 +19,167 @@ td {
     background: yellow;
 }
 #Transparency {
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
     opacity: 0.5;
 }
+#RGBA {
+   background-color: rgba(255, 255, 0, .5);
+   color: rgba(0, 0, 100, .5);
+   border-color: rgba(0, 0, 0, .5);
+}
 #BlockShadow {
+    -webkit-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
 }
-#TextShadow {
-    text-shadow: 2px -4px 3px black;
+#DropShadow {
+    filter: drop-shadow(0 0 10px #333);
 }
+
 #CircledBorder {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     border-radius: 20px;
 }
+#CircleBorder2 {
+    margin-left: 1em;
+    border: 0px;
+    background-image: url(../_i/round_border.png);
+    background-size: contain;
+}
 #GradientBackground {
+    -webkit-background: linear-gradient(to right, aqua, yellow);
+    -moz-background: linear-gradient(to right, aqua, yellow);
     background: linear-gradient(to right, aqua, yellow);
 }
+#GradientOld{
+    background: url(../_i/picture.png) repeat-y #FFFF00;
+    background-size: contain;
+}
+#BorderImage {
+    background-color:  whitesmoke;
+    border-width: 10px;
+    -webkit-border-image: url(../_i/border.png) 30 round round;
+    -moz-border-image: url(../_i/border.png) 30 round round;
+    border-image: url(../_i/border.png) 30 round round;
+}  
 #BackgroundClip {
     background: tomato url(../_i/texture.png) no-repeat;
     border: 10px dotted blue;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
     background-clip: border-box;
 }
 #BackgroundOrigin {
     background: url(../_i/css3.png) repeat-x;
     border: 20px solid black;
     padding: 20px;
+    -webkit-background-origin: padding-box;
+    -moz-background-origin: padding-box;
     background-origin: padding-box;
 }
 #BackgroundSize {
     background: url(../_i/css3.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
 }
 #BoxSizing {
     width: 400px;
     padding: 10px;
     border: 20px solid #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 #ColumnCount {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
 }
 #ColumnGap {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 4em;
+    -moz-column-count: 3;
+    -moz-column-gap: 4em;
     column-count: 3;
     column-gap: 4em;
 }
 #ColumnRule {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 6em;
+    -webkit-column-rule: 3px solid green;
+    -moz-column-count: 2;
+    -moz-column-gap: 6em;
+    -moz-column-rule: 3px solid green;
     column-count: 2;
     column-gap: 6em;
     column-rule: 3px solid green;
 }
 #ColumnWidth {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 4em;
+    -webkit-column-width: 5em;
+    -moz-column-count: 2;
+    -moz-column-gap: 4em;
+    -moz-column-width: 5em;
     column-count: 2;
     column-gap: 4em;
     column-width: 5em;
 }
 #Columns {
+    -webkit-columns: 3 10em;
+    -moz-columns: 3 10em;
     columns: 3 10em;
 }
 #Hyphens { /* класс блочится */
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
     hyphens: manual;
 }
 #OverFlowX {
+    -webkit-overflow-x: scroll;
+    -moz-overflow-x: scroll;
     overflow-x: scroll;
 }
 #OverFlowY {
+    -webkit-overflow-y: scroll;
+    -moz-overflow-y: scroll;
     overflow-y: scroll;
 }
 #Resize {
+    -webkit-resize: vertical;
+    -moz-resize: vertical;
     resize: vertical;
 }
 #TextOverflow {
     width: 500px;
     white-space: nowrap;
     overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
 #Transform {
     width: 100px;
     height: 100px;
+    -webkit-transform: rotate(15deg);
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: rotate(15deg);
+    -moz-transform: skewX(-15deg);
     transform: rotate(15deg);
     transform: skewX(-15deg);
 }
 #WordBreak {
     width: 400px;
+    -webkit-word-break: break-all;
+    -moz-word-break: break-all;
     word-break: break-all;
 }
 #WritingMode { /* Работает только в IE */
     height: 150px;
+    -webkit-writing-mode: bt-rl;
+    -moz-writing-mode: bt-rl;
     writing-mode: bt-rl;
 }
